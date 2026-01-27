@@ -14,6 +14,7 @@ app.use(express.json());
 // Api Endpoints merge with routes file
 app.use("api/", loginRoutes);
 
+// App Running on port 5000
 app.listen(5000, () => {
     console.log('Server is running on port 5000');
 });
