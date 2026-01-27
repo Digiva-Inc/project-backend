@@ -8,6 +8,7 @@ const db = mysql2.createConnection({
     port:3306 
 });  
 
+// Connection flow
 db.connect((err) => {
     if (err) {
         console.error('Error connecting to the database:', err);
