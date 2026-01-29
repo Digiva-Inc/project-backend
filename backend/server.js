@@ -12,7 +12,7 @@ app.use(cors({origin: 'http://localhost:3000',credentials: true}));
 app.use(express.json());
 
 // Api Endpoints merge with routes file
-app.use("api/", loginRoutes);
+app.use("/api", loginRoutes);
 
 // App Running on port 5000
 app.listen(5000, () => {
